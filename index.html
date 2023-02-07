@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     
-    <title>Hexo</title>
+    <title>lwyer&#39;s space</title>
 
-    <meta name="description" content="Hexo">
+    <meta name="description" content="lwyer&#39;s space">
     <meta name="keywords" content="">
 
     
@@ -18,10 +18,10 @@
     <meta property="og:type" content="website"/>
     <meta property="og:title" content=""/>
     <meta property="og:description" content=""/>
-    <meta property="og:locale" content="en" />
+    <meta property="og:locale" content="zh" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://example.com/index.html" />
-    <meta property="og:site_name" content="John Doe" />
+    <meta property="og:url" content="http://lwyer,github.io/index.html" />
+    <meta property="og:site_name" content="lwyer" />
     <meta property="article:publisher" content="" />
     <script type="application/ld+json">
         {
@@ -31,7 +31,7 @@
             "description": "",
             "publisher": {
                 "@type": "Organization",
-                "name": "John Doe"
+                "name": "lwyer"
             },
         }
     </script>
@@ -48,6 +48,8 @@
     
 
     
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    
 
     
 
@@ -62,6 +64,16 @@
     <script>
         window.isPost = false
         window.aomori = {
+            
+            gitalk: {
+                enable: true,
+                clientID: "47079bf7ba9331243f45",
+                clientSecret: "d03ffd809874a06f9670c2891f4905d86ed4a3ff",
+                repo: "lwyer.github.io",
+                owner: "lwyer",
+                admin: ["lwyer",],
+                distractionFreeMode: true // Facebook-like distraction free mode  // Facebook-like distraction free mode
+            },
             
             
             
@@ -81,7 +93,7 @@
             
             <div class="header-type-inner">
                 
-                    <a class="header-type-title" href="/">Hexo</a>
+                    <a class="header-type-title" href="/">lwyer&#39;s space</a>
                 
     
                 
@@ -89,6 +101,10 @@
         </div>
         <div class="header-menu">
             <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
                 
             </div>
             <div class="header-menu-social">
@@ -112,6 +128,10 @@
                 </div>
                 <div class="header-menu-mobile-menu-list">
                     
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
                 </div>
             </div>
         </div>
@@ -124,49 +144,6 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="index">
-  
-    
-      <article
-id="post-hello-world-1"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2023/02/02/hello-world-1/">hello world</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2023-02-02T08:51:02.000Z" itemprop="datePublished">2023-02-02</time>
-</div>
-    
-    
-    </div>
-</footer>
-
-</article>
-
-    
   
     
       <article
@@ -253,10 +230,6 @@ class="article article-type-post"
       <ul>
         
           <li>
-            <a href="/2023/02/02/hello-world-1/">hello world</a>
-          </li>
-        
-          <li>
             <a href="/2023/02/02/hello-world/">Hello World</a>
           </li>
         
@@ -292,7 +265,7 @@ class="article article-type-post"
     <!-- 开源不易，请勿删除 -->
     <div class="footer-wrap">
         <div class="footer-inner"> 
-            Hexo &copy; 2023<br>
+            lwyer&#39;s space &copy; 2023<br>
             Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
         </div>
     </div>
@@ -301,6 +274,8 @@ class="article article-type-post"
 
 <script type="module" src="https://unpkg.com/ionicons@6.0.2/dist/ionicons/ionicons.esm.js"></script>
 
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 
 

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     
-    <title>Archive | 2023/2 | Hexo</title>
+    <title>Archive | 2023/2 | lwyer&#39;s space</title>
 
-    <meta name="description" content="Hexo">
+    <meta name="description" content="lwyer&#39;s space">
     <meta name="keywords" content="">
 
     
@@ -27,6 +27,8 @@
     
 
     
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    
 
     
 
@@ -41,6 +43,16 @@
     <script>
         window.isPost = false
         window.aomori = {
+            
+            gitalk: {
+                enable: true,
+                clientID: "47079bf7ba9331243f45",
+                clientSecret: "d03ffd809874a06f9670c2891f4905d86ed4a3ff",
+                repo: "lwyer.github.io",
+                owner: "lwyer",
+                admin: ["lwyer",],
+                distractionFreeMode: true // Facebook-like distraction free mode  // Facebook-like distraction free mode
+            },
             
             
             
@@ -60,7 +72,7 @@
             
             <div class="header-type-inner">
                 
-                    <a class="header-type-title" href="/">Hexo</a>
+                    <a class="header-type-title" href="/">lwyer&#39;s space</a>
                 
     
                 
@@ -68,6 +80,10 @@
         </div>
         <div class="header-menu">
             <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
                 
             </div>
             <div class="header-menu-social">
@@ -91,6 +107,10 @@
                 </div>
                 <div class="header-menu-mobile-menu-list">
                     
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
                 </div>
             </div>
         </div>
@@ -113,18 +133,6 @@
         <a href="/archives/2023" class="archive-year">2023</a>
         </div>
         <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/02/02/hello-world-1/">hello world</a>
-    </h1>
-  
-
-</article>
-
-    
     
     <article class="archive-article archive-type-post">
   
@@ -167,10 +175,6 @@
       <ul>
         
           <li>
-            <a href="/2023/02/02/hello-world-1/">hello world</a>
-          </li>
-        
-          <li>
             <a href="/2023/02/02/hello-world/">Hello World</a>
           </li>
         
@@ -206,7 +210,7 @@
     <!-- 开源不易，请勿删除 -->
     <div class="footer-wrap">
         <div class="footer-inner"> 
-            Hexo &copy; 2023<br>
+            lwyer&#39;s space &copy; 2023<br>
             Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
         </div>
     </div>
@@ -215,6 +219,8 @@
 
 <script type="module" src="https://unpkg.com/ionicons@6.0.2/dist/ionicons/ionicons.esm.js"></script>
 
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 
 
