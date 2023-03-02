@@ -6,35 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     
-    <title>lwyer&#39;s space</title>
+    <title>线性表-1 | lwyer&#39;s space</title>
 
     <meta name="description" content="lwyer&#39;s space">
     <meta name="keywords" content="">
 
     
 
-
-
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
     <meta property="og:locale" content="cn" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://lwyer.github.io/index.html" />
-    <meta property="og:site_name" content="lwyer" />
+    <meta property="og:title" content= "线性表-1 | lwyer&#39;s space"  />
+    <meta property="og:description" content= "lwyer&#39;s space" />
+    <meta property="og:url" content="https://lwyer.github.io/2023/03/02/%E7%BA%BF%E6%80%A7%E8%A1%A81/index.html" />
+    <meta property="og:site_name" content="" />
+    <meta property="article:author" content="lwyer" />
     <meta property="article:publisher" content="" />
+    <meta property="og:description" content="lwyer&#39;s space" />
+    <meta name="twitter:title" content="线性表-1 | lwyer&#39;s space"/>
+    <meta name="twitter:description" content="lwyer&#39;s space"/>
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "",
-            "description": "",
+            "description": "lwyer&#39;s space",
+            "author": { "@type": "Person", "name": "lwyer" },
+            "@type": "BlogPosting",
+            "url": "https://lwyer.github.io/2023/03/02/%E7%BA%BF%E6%80%A7%E8%A1%A81/index.html",
             "publisher": {
-                "@type": "Organization",
-                "name": "lwyer"
+            "@type": "Organization",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://lwyer.github.ioundefined"
             },
+            "name": "lwyer"
+            },
+            "headline": "线性表-1 | lwyer&#39;s space",
+            "datePublished": "2023-03-02T14:00:57.000Z",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://lwyer.github.io/2023/03/02/%E7%BA%BF%E6%80%A7%E8%A1%A81/index.html"
+            },
+            "@context": "http://schema.org"
         }
     </script>
+
+
 
 
     
@@ -66,7 +80,7 @@
 
 
     <script>
-        window.isPost = false
+        window.isPost = true
         window.aomori = {
             
             gitalk: {
@@ -104,6 +118,8 @@
                 
     
                 
+                    
+                        <span class="header-type-page-title">| Archive</span>
                     
                 
             </div>
@@ -156,26 +172,50 @@
         <div class="main">
             <section class="inner">
                 <section class="inner-main">
-                    <div class="index">
-  
-    
-      <article
-id="post-线性表1"
-class="article article-type-post"
->
+                    <div class="post">
+    <article id="post-cler6fc4k00016sqb0yxx8ur5" class="article article-type-post" itemscope
+    itemprop="blogPost">
 
+    <div class="article-inner">
 
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2023/03/02/%E7%BA%BF%E6%80%A7%E8%A1%A81/">线性表-1</a>
-    </header>
-    <div class="article-entry post-inner-html">
         
-        <h2 id="静态分配"><a href="#静态分配" class="headerlink" title="静态分配"></a>静态分配</h2><pre><code class="c">#define MaxSize 50
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      线性表-1
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2023-03-02T14:00:57.000Z" itemprop="datePublished">2023-03-02</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h2 id="静态分配"><a href="#静态分配" class="headerlink" title="静态分配"></a>静态分配</h2><pre><code class="c">#define MaxSize 50
 typedef struct&#123;
   ElemType data[MaxSize];
   int length;
@@ -421,396 +461,70 @@ struct Node b[MaxSize]; // a,b等价
 <h2 id="何时使用顺序表？何时使用链表？"><a href="#何时使用顺序表？何时使用链表？" class="headerlink" title="何时使用顺序表？何时使用链表？"></a>何时使用顺序表？何时使用链表？</h2><p>表长难以预估，经常需要增加&#x2F;删除元素 –链表<br>表长可预估，查询（搜索）操作较多 – 顺序表</p>
 <h2 id="开放式问题的答题思路"><a href="#开放式问题的答题思路" class="headerlink" title="开放式问题的答题思路"></a>开放式问题的答题思路</h2><p>问题：请描述顺序表和链表的…，实现xxx时，用顺序表还是链表？<br>顺序表和链表的逻辑结构都是<strong>线性结构</strong>，都属于线性表。<br>但是二者的存储结构不同，顺序表采用顺序存储（特点，带来的优缺点）；链表采用链式存储…（特点，带来的优缺点）。<br>由于采用不同的存储方式实现，因此基本操作的实现效率也不同。当初始化时…；当插入一个数据元素时…；当删除一个数据元素时；当查找一个数据元素时…</p>
 
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2023-03-02T14:00:57.000Z" itemprop="datePublished">2023-03-02</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a></li></ul>
         </div>
-    
+
     </div>
-</footer>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+  
+    <a href="/2023/02/22/%E5%A4%96%E7%BD%AE%E5%A4%A7%E8%84%91/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
+      <div class="article-nav-title">外置大脑</div>
+    </a>
+  
+</nav>
+
+
+    <section class="share">
+        <div class="share-title">分享</div>
+        <a class="share-item" target="_blank"
+            href="https://twitter.com/share?text=线性表-1 - lwyer's space&url=https%3A%2F%2Flwyer.github.io%2F2023%2F03%2F02%2F%25E7%25BA%25BF%25E6%2580%25A7%25E8%25A1%25A81%2F">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a class="share-item" target="_blank"
+            href="https://www.facebook.com/sharer.php?title=线性表-1 - lwyer's space&u=https%3A%2F%2Flwyer.github.io%2F2023%2F03%2F02%2F%25E7%25BA%25BF%25E6%2580%25A7%25E8%25A1%25A81%2F">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <!-- <a class="share-item" target="_blank"
+            href="https://service.weibo.com/share/share.php?title=线性表-1 - lwyer's space&url=https://lwyer.github.io/2023/03/02/%E7%BA%BF%E6%80%A7%E8%A1%A81/&pic=">
+            <div class="n-icon n-icon-weibo"></div>
+        </a> -->
+    </section>
 
 </article>
 
-    
-  
-    
-      <article
-id="post-外置大脑"
-class="article article-type-post"
->
 
 
 
-<div class="article-inner">
-    
 
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2023/02/22/%E5%A4%96%E7%BD%AE%E5%A4%A7%E8%84%91/">外置大脑</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h1 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h1><h2 id="win10下terminal单次代理"><a href="#win10下terminal单次代理" class="headerlink" title="win10下terminal单次代理"></a>win10下terminal单次代理</h2><pre><code class="cmd">set http_proxy=http://127.0.0.1:1081
-set https_proxy=http://127.0.0.1:1081
-// 测试
-curl https://www.google.com
-</code></pre>
-<p>ping命令使用的是ICMP协议，而这里只代理了http的端口，故使用curl测试</p>
-<h2 id="git中对github代理"><a href="#git中对github代理" class="headerlink" title="git中对github代理"></a>git中对github代理</h2><pre><code class="bash">git config --global http.https://github.com.proxy socks5://127.0.0.1:51837
-// 取消代理
-git config --global --unset http.proxy git config --global --unset https.proxy
-</code></pre>
 
-        
-    </div>
-    </div>
 
-    <div class="article-badge">
-        
-        
-    </div>
+
+<section class="comments">
+    <div id="gitalk-container"></div>
+</section>
+
+
+
+
+
+
+
+
 
 </div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2023-02-22T06:00:05.000Z" itemprop="datePublished">2023-02-22</time>
-</div>
-    
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-指针小结"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2023/02/20/%E6%8C%87%E9%92%88%E5%B0%8F%E7%BB%93/">指针小结</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>自从2月8号以来已经过去了12天，咕了三次本应该有的学习小结，而真正能整理出来的笔记却只有大约半天的学习量。非常惭愧，还是要端正态度。</p>
-<h2 id="指针使用"><a href="#指针使用" class="headerlink" title="指针使用"></a>指针使用</h2><pre><code class="c">scanf(&quot;%d&quot;, &amp;i); //取地址运算：&amp;运算符取得变量的地址
-//指针变量就是记录地址的变量
-int* p = &amp;i;
-
-int* p;
-int *p;
-//以上两种声明方式等价，意为声明了一个int类型的指针。
-
-int k = *p; //*是一个单目运算符，用来访问指针所指向的地址上的变量
-*p = k + 1;
-</code></pre>
-<ul>
-<li>变量的值是内存的地址<ul>
-<li>普通变量的值是实际的值</li>
-<li>指针变量的值是具有实际值的变量的地址</li>
-</ul>
-</li>
-</ul>
-<h2 id="指针运用场景"><a href="#指针运用场景" class="headerlink" title="指针运用场景"></a>指针运用场景</h2><h3 id="1-函数返回多个值，某些值只能通过指针返回"><a href="#1-函数返回多个值，某些值只能通过指针返回" class="headerlink" title="1. 函数返回多个值，某些值只能通过指针返回"></a>1. 函数返回多个值，某些值只能通过指针返回</h3><p>传入的参数实际上是需要保存带回结果的变量<br>例：交换两个变量的值</p>
-<pre><code class="c">void swap(int *pa, int *pb) &#123;
-  int t = *pa;
-  *pa = *pb;
-  *pb = t;
-&#125;
-</code></pre>
-<h3 id="2-函数返回运算的状态，结果通过指针返回"><a href="#2-函数返回运算的状态，结果通过指针返回" class="headerlink" title="2.函数返回运算的状态，结果通过指针返回"></a>2.函数返回运算的状态，结果通过指针返回</h3><p>返回函数的运算状态，通常的做法是让函数返回特殊的不属于有效范围的值，如0，-1<br>但当任何数值都是有效的可能结果时，就得分开返回（状态通过函数返回值返回，实际值通过指针返回）<br>ps：在C++和Java采用了异常机制来处理这个问题<br>例：一个做除法的函数</p>
-<pre><code class="c">int divide(int a, int b, int *result) &#123;
-  int ret = 1;
-  if (b == 0) &#123;
-    ret = 0;
-  &#125;
-  else &#123;
-    *result = a / b;
-  &#125;
-  return ret;
-&#125;
-</code></pre>
-<h2 id="指针和数组"><a href="#指针和数组" class="headerlink" title="指针和数组"></a>指针和数组</h2><p>数组作为参数传入函数时，实际上传入的是一个指向数组的指针。</p>
-<ul>
-<li>数组变量是特殊的指针<ul>
-<li>int a[10]; int *p &#x3D; a; &#x2F;&#x2F; 不用&amp;取地址</li>
-<li>但是数组的单元表达的是变量，需要用&amp;取地址。</li>
-<li>a &#x3D;&#x3D; &amp;a[0]</li>
-</ul>
-</li>
-<li>[]运算符和*运算符既可以对数组做运算，也可以对指针做运算<ul>
-<li>p[0] &lt;&#x3D;&#x3D;&#x3D;&gt; a[0]</li>
-<li>*a &#x3D; 25 &lt;&#x3D;&#x3D;&#x3D;&gt; a[0] &#x3D; 25;</li>
-</ul>
-</li>
-<li>数组变量是const的指针，所以不能被赋值<ul>
-<li>int a[] &lt;&#x3D;&#x3D;&#x3D;&gt; int * const a &#x3D; ….</li>
-</ul>
-</li>
-</ul>
-<h2 id="指针和const"><a href="#指针和const" class="headerlink" title="指针和const"></a>指针和const</h2><pre><code class="c">// （1）
-int *const q = &amp;i;
-*q = 26; // ok
-q ++; // error!
-// 表示一旦得到了某个变量的地址，指针就不能再指向其他变量 【指针q是const】
-
-// (2)
-const int *p = &amp;i;
-// 表示不能通过这个指针p去修改变量i（不会使变量i成为const）【指针p所指的变量是const】
-*P = 26; // error! (*p)是const
-i = 26; // ok
-p = &amp;j // ok
-//通过判断const在*前还是后来做区分
-const int *p1 = &amp;i; // （2）
-int const* p2 = &amp;i; // （2）
-int *const p3 = &amp;i; // （1）
-</code></pre>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ol>
-<li>当要传递的参数类型比地址大的时候，既能用比较少的字节数传递值给参数(特别是在结构体中），又能避免函数对外面的变量的修改</li>
-</ol>
-<pre><code class="c">void f(const int* x);
-</code></pre>
-<ol start="2">
-<li>保护数组值，因为把数组传入函数时传递的时地址，所以那个函数内部可以修改数组的值，为了避免数组不被函数修改，可以设置参数为const</li>
-</ol>
-<pre><code class="c">int sum(const int a[],int length);
-</code></pre>
-<h2 id="指针运算"><a href="#指针运算" class="headerlink" title="指针运算"></a>指针运算</h2><pre><code class="c">//给一个指针加一表示要让指针指向下一个变量
-int a[10];
-int *p = a;
-*(p + 1) == a[1];
-// 如果指针不是指向一片连续分配的空间，如数组，则这种运算没用意义
-*p ++;
-//取出p所指的数据，然后把p移到下一个位置（*的优先级小于++）
-</code></pre>
-<h3 id="0地址"><a href="#0地址" class="headerlink" title="0地址"></a>0地址</h3><p>内存中有0地址，但通常指针不应该具有0值。</p>
-<ul>
-<li>因此可以用0地址表示特殊的事情：<ul>
-<li>返回的指针时无效的</li>
-<li>指针没有被真正初始化</li>
-</ul>
-</li>
-<li>NULL时一个预定定义的符号，用来表示0地址</li>
-<li>使用NULL而不是0来表示0地址！</li>
-</ul>
-<h3 id="指针类型转换"><a href="#指针类型转换" class="headerlink" title="指针类型转换"></a>指针类型转换</h3><ul>
-<li>void表示不知道指向什么类型的指针</li>
-</ul>
-<pre><code class="c">int *p = &amp;i; void *q - (void*)p; //指针的类型转换
-//这里并没有改变p所指的变量的类型，而是改变了p指向的类型
-//p指向了int -&gt; p指向了void
-</code></pre>
-<h2 id="动态内存分配"><a href="#动态内存分配" class="headerlink" title="动态内存分配"></a>动态内存分配</h2><p>输入数据时，先给你数据个数n，再给你n个数据，要求你存储这n个数据，该怎么做？</p>
-<pre><code class="c">int *a = (int*) malloc(n * sizeof(int));
-for(int i = 0; i &lt; n; i ++) &#123;
-  scanf(&quot;%d&quot;, &amp;a[i]);
-&#125;
-free(a);
-// C99开始可以用变量确定数组的大小,C99之前只能用以上方式
-</code></pre>
-<ul>
-<li>向malloc申请的空间的大小是以字节为单位的</li>
-</ul>
-<pre><code class="c">#include &lt;stdlib.h&gt;
-void* malloc(size_t size);
-</code></pre>
-<ul>
-<li>返回结果时void*。需要将类型转换为自己需要的类型</li>
-<li>如果没空间，申请失败了会返回0，即NULL</li>
-<li>free() 申请来的空间得“还”<ul>
-<li>只能还申请来的空间的首地址</li>
-</ul>
-</li>
-<li>指针定义时最好用NULL做一下初始化，以免它指向奇怪的地方<ul>
-<li>因此free(NULL)是被允许的</li>
-</ul>
-</li>
-</ul>
-<pre><code class="c">free(NULL); //ok
-void *p = NULL; // 
-free(p) //ok
-</code></pre>
-<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><ul>
-<li>malloc后没free -&gt; <strong>长时间</strong>运行内存逐渐下降</li>
-<li>free过了再free</li>
-<li>地址变了，直接去free</li>
-</ul>
-<blockquote>
-<p><strong>来一碗课程中的鸡汤</strong><br>学计算机一定要有一个非常强大的心理状态，计算机的所有东西都是人做出来的，别人能想出来的，我也一定能想出来，计算机里头没有任何黑魔法，所有的东西只是我现在不知道而已，总有一天我会把所有的细节，所有的内部东西全部搞明白。 <p align="right">– 翁恺老师</p></p>
-</blockquote>
-<br>
-
-<p>参考资料：<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dr4y1n7vA?p=82&vd_source=d73ecc50963e1ff1f97ba67f22cff84c">9.1.2 指针：指针变量就是记录地址的变量_高清 720P_哔哩哔哩_bilibili</a><br><a target="_blank" rel="noopener" href="https://google.github.io/styleguide/cppguide.html">Google C++ Style Guide</a></p>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2023-02-19T18:39:09.000Z" itemprop="datePublished">2023-02-20</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-写在开始"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2023/02/08/%E5%86%99%E5%9C%A8%E5%BC%80%E5%A7%8B/">写在开始</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>最早写博客应该是在高中搞OI的时候，记录一些不会做的题，大致的创作流程是这样的：<br>搜索网络上的题解-&gt;自己复现一遍-&gt;用自己的话写一遍题解<br>这样的做法比起看到AC就直接pass，多了一个复习总结的过程，知识点掌握得自然就更牢了（尽管现在大多已经忘了）</p>
-<p>回到正题，多年来的学习经验使我意识到，<b>闭门造车式的学习是行不通的</b>。由于笔者是在家自学备战计算机考研11408，一是没有能够互相交流学习的老师同学，二是缺乏一个自我监督的环境。基于此，笔者会将在自己学习过程中的收获输出到这篇博客，以此来监督自己。在家考研是个孤独的过程，希望能借助这个平台，与同学朋友，还有看到这篇博文的志同道合的朋友们一起交流学习。</p>
-<h2 id="我的学习工作流"><a href="#我的学习工作流" class="headerlink" title="我的学习工作流"></a>我的学习工作流</h2><p>在使用了多款管理工具后，我简单确定了自己需要使用的几款工具</p>
-<h3 id="目标管理软件"><a href="#目标管理软件" class="headerlink" title="目标管理软件"></a>目标管理软件</h3><p>尽管市面上有着比微软全家桶更好的各种工具，但微软的几个工具使用起来比较简单，而且能够做到手机PC互通，笔者也比较熟悉，所以我使用outlook来做目标管理。</p>
-<p>用to do 来放一下代办的事情<br><img src="/2023/02/08/%E5%86%99%E5%9C%A8%E5%BC%80%E5%A7%8B/Pasted%20image%2020230208201602.png"><br>用日历来做一下时间的规划、安排。<br><img src="/2023/02/08/%E5%86%99%E5%9C%A8%E5%BC%80%E5%A7%8B/Pasted%20image%2020230208201830.png"></p>
-<h3 id="笔记软件"><a href="#笔记软件" class="headerlink" title="笔记软件"></a>笔记软件</h3><p>一款是obsidian，网络上给好评的很多，我用它的原因主要是它支持markdown，而我的博客也是通过markdown发布的，这样我做的笔记稍作修改就能发到博客了（真巧）<br>还有就是OneNote，因为它还算能用的多设备同步，以及离不开的微软全家桶…</p>
-<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><p>周三的内容应该只包含我复习考研科目的一些笔记<br>周日的内容会参杂一些摸鱼看到的东西？<br>以及不定时发布codeforces、leetcode的题解，还有一些读书笔记</p>
-<h2 id="学习计划（now-3-31）"><a href="#学习计划（now-3-31）" class="headerlink" title="学习计划（now~3.31）"></a>学习计划（now~3.31）</h2><p>过一遍408 + 线性代数（flag先立下了！）</p>
-<p>多说无益，开始学习吧！</p>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2023-02-08T14:42:28.000Z" itemprop="datePublished">2023-02-08</time>
-</div>
-    
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-hello-world"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2023/02/02/hello-world/">Hello World</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2023-02-02T08:11:35.138Z" itemprop="datePublished">2023-02-02</time>
-</div>
-    
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-
-  
-</div>
-
                 </section>
             </section>
 
@@ -832,6 +546,12 @@ class="article article-type-post"
 <div class="widget" id="widget">
     
       
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
     
       
 
