@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags - Tag - lwyer</title>
+        <title>Tags - Tag - lwyer&#39;s blog</title>
         <link>http://lwyer.github.io/tags/</link>
-        <description>Tags - Tag - lwyer</description>
+        <description>Tags - Tag - lwyer&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>laiweiye@outlook.com (lwyer)</managingEditor>
             <webMaster>laiweiye@outlook.com (lwyer)</webMaster><atom:link href="http://lwyer.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
 </rss>
