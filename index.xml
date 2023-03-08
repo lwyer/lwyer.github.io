@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>lwyer&#39;s blog</title>
+        <title>风吹叶落</title>
         <link>http://lwyer.github.io/</link>
         <description>人生到处知何似，应似飞鸿踏雪泥</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>laiweiye@outlook.com (lwyer)</managingEditor>
@@ -8,11 +8,11 @@
             <atom:link href="http://lwyer.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Hello World</title>
-    <link>http://lwyer.github.io/posts/hello-world/</link>
+    <link>http://lwyer.github.io/hello-world/</link>
     <pubDate>Wed, 08 Mar 2023 17:57:25 &#43;0800</pubDate>
     <author>lwyer</author>
-    <guid>http://lwyer.github.io/posts/hello-world/</guid>
-    <description><![CDATA[]]></description>
+    <guid>http://lwyer.github.io/hello-world/</guid>
+    <description><![CDATA[请洒潘江，各倾陆海云尔]]></description>
 </item>
 </channel>
 </rss>
