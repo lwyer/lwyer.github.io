@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>绪论1 - 风吹叶落</title><meta name="Description" content="人生到处知何似，应似飞鸿踏雪泥"><meta property="og:title" content="绪论1" />
+<meta property="og:description" content="数据结构的基本概念 数据
+所有能输入到计算机中并被计算机程序识别和处理的符号的集合
+不仅包括整数、实数等数值，也包括字符、声音、图像、视频等非数值 数据元素
+数据的基本单位
+学生记录就是一个数据元素 数据项
+构成数据元素的不可分割的最小单位
+学生记录中的学号、姓名等 数据对象
+相同性质的数据元素的集合，是数据的子集
+数据类型
+一个值的集合和在此集合上的一组操作的总称
+例：C语言中将数据类型分为基本类型和构造类型
+基本类型：整型、浮点型、字符型等 构造类型：数组、结构、指针、自定义类型等 抽象数据类型
+抽象数据的组织和与之相关的操作
+数据对象 数据关系 基本操作集 数据结构
+存在一种或多种特定关系的数据元素的集合
+数据的逻辑结构 数据的存储结构 数据的运算 一个算法的设计取决与所选定的逻辑结构，算法的实现以来所采取的存储结构
+数据结构三要素 数据的逻辑结构（数据元素间的逻辑关系）
+线性结构 （数据元素之间一对一的关系） 一般线性表 受限线性表 栈和队列 串 线性表推广 数组 集合 （数据元素之间同属一个集合，无其他关系） 树形结构 （数据元素间一对多的关系） 一般数 二叉树 图状结构 （数据元素间多对多的关系） 有向图 无向图 数据的存储结构/物理结构（用计算机语言实现的逻辑结构）
+顺序存储 -数组实现 链式存储 -指针实现 索引存储 -索引项实现 散列存储 -利用哈希计算并存储数值的地址 数据的运算
+运算的定义是针对逻辑结构的，指出运算的功能；运算的实现是针对逻辑结构的，指出运算的具体操作步骤
+例子 P3-T1: 抽象数据类型描述了数据的逻辑结构和抽象运算，从而定义一个完整的数据结构
+P3-T4: 栈是一种抽象数据类型，可采用顺序存储和链式存储，只表示逻辑结构。循环队列 是用顺序表表示的队列，是一种数据结构
+P3-T6：存储数据时，不仅要存储数据元素的值，也要存储数据元素的关系
+P3-T7: 链式存储设计时，结点的存储空间可以不连续，但结点内的存储单元地址必须连续
+P67-T1：栈和队列具有相同的逻辑结构，都属于线性结构，只是它们对数据的运算不同，它们的存储结构也不一定相同（既可以顺序存储也可以链式存储）" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lwyer.github.io/%E7%BB%AA%E8%AE%BA1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-13T16:34:31+08:00" />
+<meta property="article:modified_time" content="2023-03-13T16:34:31+08:00" /><meta property="og:site_name" content="风吹叶落" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="绪论1"/>
+<meta name="twitter:description" content="数据结构的基本概念 数据
+所有能输入到计算机中并被计算机程序识别和处理的符号的集合
+不仅包括整数、实数等数值，也包括字符、声音、图像、视频等非数值 数据元素
+数据的基本单位
+学生记录就是一个数据元素 数据项
+构成数据元素的不可分割的最小单位
+学生记录中的学号、姓名等 数据对象
+相同性质的数据元素的集合，是数据的子集
+数据类型
+一个值的集合和在此集合上的一组操作的总称
+例：C语言中将数据类型分为基本类型和构造类型
+基本类型：整型、浮点型、字符型等 构造类型：数组、结构、指针、自定义类型等 抽象数据类型
+抽象数据的组织和与之相关的操作
+数据对象 数据关系 基本操作集 数据结构
+存在一种或多种特定关系的数据元素的集合
+数据的逻辑结构 数据的存储结构 数据的运算 一个算法的设计取决与所选定的逻辑结构，算法的实现以来所采取的存储结构
+数据结构三要素 数据的逻辑结构（数据元素间的逻辑关系）
+线性结构 （数据元素之间一对一的关系） 一般线性表 受限线性表 栈和队列 串 线性表推广 数组 集合 （数据元素之间同属一个集合，无其他关系） 树形结构 （数据元素间一对多的关系） 一般数 二叉树 图状结构 （数据元素间多对多的关系） 有向图 无向图 数据的存储结构/物理结构（用计算机语言实现的逻辑结构）
+顺序存储 -数组实现 链式存储 -指针实现 索引存储 -索引项实现 散列存储 -利用哈希计算并存储数值的地址 数据的运算
+运算的定义是针对逻辑结构的，指出运算的功能；运算的实现是针对逻辑结构的，指出运算的具体操作步骤
+例子 P3-T1: 抽象数据类型描述了数据的逻辑结构和抽象运算，从而定义一个完整的数据结构
+P3-T4: 栈是一种抽象数据类型，可采用顺序存储和链式存储，只表示逻辑结构。循环队列 是用顺序表表示的队列，是一种数据结构
+P3-T6：存储数据时，不仅要存储数据元素的值，也要存储数据元素的关系
+P3-T7: 链式存储设计时，结点的存储空间可以不连续，但结点内的存储单元地址必须连续
+P67-T1：栈和队列具有相同的逻辑结构，都属于线性结构，只是它们对数据的运算不同，它们的存储结构也不一定相同（既可以顺序存储也可以链式存储）"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://lwyer.github.io/%E7%BB%AA%E8%AE%BA1/" /><link rel="prev" href="https://lwyer.github.io/hello-world/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "绪论1",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/lwyer.github.io\/%E7%BB%AA%E8%AE%BA1\/"
+        },"genre": "posts","wordcount":  69 ,
+        "url": "https:\/\/lwyer.github.io\/%E7%BB%AA%E8%AE%BA1\/","datePublished": "2023-03-13T16:34:31+08:00","dateModified": "2023-03-13T16:34:31+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "lwyer"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="风吹叶落"><span class="header-title-pre">🍃</span>lwyer&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="风吹叶落"><span class="header-title-pre">🍃</span>lwyer&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">绪论1</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>lwyer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>数据结构</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-13">2023-03-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;69 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#数据结构的基本概念">数据结构的基本概念</a></li>
+    <li><a href="#数据结构三要素">数据结构三要素</a></li>
+    <li><a href="#例子">例子</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="数据结构的基本概念">数据结构的基本概念</h2>
+<ul>
+<li>
+<p>数据</p>
+<p>所有能输入到计算机中并被计算机程序识别和处理的符号的集合</p>
+<ul>
+<li>不仅包括整数、实数等数值，也包括字符、声音、图像、视频等非数值</li>
+</ul>
+</li>
+<li>
+<p>数据元素</p>
+<p>数据的基本单位</p>
+<ul>
+<li>学生记录就是一个数据元素</li>
+</ul>
+</li>
+<li>
+<p>数据项</p>
+<p>构成数据元素的不可分割的最小单位</p>
+<ul>
+<li>学生记录中的学号、姓名等</li>
+</ul>
+</li>
+<li>
+<p>数据对象</p>
+<p>相同性质的数据元素的集合，是数据的子集</p>
+</li>
+<li>
+<p>数据类型</p>
+<p>一个值的集合和在此集合上的一组操作的总称</p>
+<ul>
+<li>
+<p>例：C语言中将数据类型分为基本类型和构造类型</p>
+<ul>
+<li>基本类型：整型、浮点型、字符型等</li>
+<li>构造类型：数组、结构、指针、自定义类型等</li>
+</ul>
+</li>
+<li>
+<p>抽象数据类型</p>
+<p>抽象数据的组织和与之相关的操作</p>
+<ul>
+<li>数据对象</li>
+<li>数据关系</li>
+<li>基本操作集</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>数据结构</p>
+<p>存在一种或多种特定关系的数据元素的集合</p>
+<ul>
+<li>数据的逻辑结构</li>
+<li>数据的存储结构</li>
+<li>数据的运算</li>
+</ul>
+<p>一个算法的设计取决与所选定的逻辑结构，算法的实现以来所采取的存储结构</p>
+</li>
+</ul>
+<h2 id="数据结构三要素">数据结构三要素</h2>
+<ul>
+<li>
+<p>数据的逻辑结构（数据元素间的逻辑关系）</p>
+<ul>
+<li>线性结构 <strong>（数据元素之间一对一的关系）</strong>
+<ul>
+<li>一般线性表</li>
+<li>受限线性表
+<ul>
+<li>栈和队列</li>
+<li>串</li>
+</ul>
+</li>
+<li>线性表推广
+<ul>
+<li>数组</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>集合 <strong>（数据元素之间同属一个集合，无其他关系）</strong></li>
+<li>树形结构 <strong>（数据元素间一对多的关系）</strong>
+<ul>
+<li>一般数</li>
+<li>二叉树</li>
+</ul>
+</li>
+<li>图状结构 <strong>（数据元素间多对多的关系）</strong>
+<ul>
+<li>有向图</li>
+<li>无向图</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>数据的存储结构/物理结构（用计算机语言实现的逻辑结构）</p>
+<ul>
+<li>顺序存储 -数组实现</li>
+<li>链式存储 -指针实现</li>
+<li>索引存储 -索引项实现</li>
+<li>散列存储 -利用哈希计算并存储数值的地址</li>
+</ul>
+</li>
+<li>
+<p>数据的运算</p>
+<p>运算的定义是针对逻辑结构的，指出运算的功能；运算的实现是针对逻辑结构的，指出运算的具体操作步骤</p>
+</li>
+</ul>
+<h2 id="例子">例子</h2>
+<ul>
+<li>
+<p>P3-T1: 抽象数据类型描述了数据的逻辑结构和抽象运算，从而定义一个完整的数据结构</p>
+</li>
+<li>
+<p>P3-T4: 栈是一种抽象数据类型，可采用顺序存储和链式存储，只表示逻辑结构。<strong>循环队列</strong> 是用顺序表表示的队列，是一种数据结构</p>
+</li>
+<li>
+<p>P3-T6：存储数据时，不仅要存储数据元素的值，也要存储数据元素的关系</p>
+</li>
+<li>
+<p>P3-T7: 链式存储设计时，结点的<strong>存储空间</strong>可以不连续，但结点内的<strong>存储单元地址</strong>必须连续</p>
+</li>
+<li>
+<p>P67-T1：栈和队列具有相同的逻辑结构，都属于线性结构，只是它们对数据的运算不同，它们的存储结构也不一定相同（既可以顺序存储也可以链式存储）</p>
+</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-03-13</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/hello-world/" class="prev" rel="prev" title="Hello World"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Hello World</a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">lwyer</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"gitalk":{"admin":["lwyer"],"clientID":"47079bf7ba9331243f45","clientSecret":"d03ffd809874a06f9670c2891f4905d86ed4a3ff","id":"2023-03-13T16:34:31+08:00","owner":"lwyer","repo":"lwyer.github.io","title":"绪论1"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"2TEEFXV296","algoliaIndex":"blog search","algoliaSearchKey":"4657f537d71bc081e63b886bad8b2b90","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
