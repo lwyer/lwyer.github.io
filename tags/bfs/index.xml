@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - 风吹叶落</title>
-        <link>https://lwyer.github.io/posts/</link>
-        <description>All Posts | 风吹叶落</description>
+        <title>bfs - Tag - 风吹叶落</title>
+        <link>https://lwyer.github.io/tags/bfs/</link>
+        <description>bfs - Tag - 风吹叶落</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>laiweiye@outlook.com (lwyer)</managingEditor>
-            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Fri, 12 May 2023 16:22:17 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Fri, 12 May 2023 16:22:17 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/tags/bfs/" rel="self" type="application/rss+xml" /><item>
     <title>Codeforces Round 871 (Div. 4)小结</title>
     <link>https://lwyer.github.io/cf871%E5%B0%8F%E7%BB%93/</link>
     <pubDate>Fri, 12 May 2023 16:22:17 &#43;0800</pubDate>
@@ -20,27 +20,6 @@ C 题意 一个人可以花时间读【00，01，10，11】四种书，问达成
 D 题意 设一块金子重量是3x，这块金子能够以分成x和2x的方式被切割，比如6可以被切割为2和4。给定一个n和m，问重为n的金子能否通过切割得到重为m的金子？
 解析 根据题意dfs搜索答案即可，时间复杂度为O($n^{log_23} \times t$)
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 #include&lt;bits/stdc++.h&gt; #define pi acos(1.0) #define e exp(-1.0) using namespace std; typedef long long LL; bool solve(int n, int m) { if(n == m) return true; else { if(n % 3 == 0) { return (solve(n / 3, m) || solve(n / 3 * 2, m)); } else { return false; } } } int main() { int t; cin &gt;&gt; t; while (t --) { int n, m; cin &gt;&gt; n &gt;&gt; m; if(solve(n, m)) cout &lt;&lt; &#34;yes&#34;; else cout &lt;&lt; &#34;no&#34;; cout &lt;&lt; endl; } return 0; } E 题意 给一个n*m的数组，每个数字表示湖的深度，深度为0的地方代表陆地，问最大容量（所有深度之和）的湖有多大？]]></description>
-</item>
-<item>
-    <title>Town(家乡) | 翻译</title>
-    <link>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E5%AE%B6%E4%B9%A1/</link>
-    <pubDate>Fri, 12 May 2023 15:22:17 &#43;0800</pubDate>
-    <author>rohit kumar</author>
-    <guid>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E5%AE%B6%E4%B9%A1/</guid>
-    <description><![CDATA[I recently shifted from my home town to Delhi – the country&rsquo;s capital. When I was in my town, I missed Delhi. When I am in Delhi now, I miss my home town.
-最近我离开家乡来到德里-国家的首都。当我在我的家乡时，我想去德里，可当我真正在德里时，我想念我的家乡。
-You ask why?
-Why I wanted to move to Delhi is a story for another day. But I will tell you why I desire to move back to my small and still home town.
-你问我为什么？
-我为什么想去德里改天再说吧，但是我想告诉你的时我为什么想从德里回到我的小小的平静的家乡。]]></description>
-</item>
-<item>
-    <title>Hello World</title>
-    <link>https://lwyer.github.io/hello-world/</link>
-    <pubDate>Wed, 08 Mar 2023 17:57:25 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://lwyer.github.io/hello-world/</guid>
-    <description><![CDATA[请洒潘江，各倾陆海云尔]]></description>
 </item>
 </channel>
 </rss>
