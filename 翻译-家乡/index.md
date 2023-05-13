@@ -3,7 +3,7 @@
 
 I recently shifted from my home town to Delhi – the country's capital. When I was in my town, I missed Delhi. When I am in Delhi now, I miss my home town.
 
-> 最近我离开家乡来到德里-国家的首都。当我在我的家乡时，我想去德里，可当我真正在德里时，我想念我的家乡。
+> 最近我离开家乡来到德里--国家的首都。当我在我的家乡时，我想去德里，可当我真正在德里时，我想念我的家乡。
 
 You ask why?
 
@@ -11,7 +11,7 @@ Why I wanted to move to Delhi is a story for another day. But I will tell you wh
 
 > 你问我为什么？
 >
-> 我为什么想去德里改天再说吧，但是我想告诉你的时我为什么想从德里回到我的小小的平静的家乡。
+> 我为什么想去德里改天再说吧，但是我想告诉你的是我为什么想从德里回到我那小小的平静的家乡。
 
 Cities and towns have souls of their own. You don’t just live in them; you live with them. If you like their company, things will align themselves to make you successful and happy. But if you don’t like the company, you will keep bumping into the wrong things.
 
@@ -46,7 +46,6 @@ Many people think of moving to a big, more vibrant city when they read Naval's q
 
 
 ---
-一些生词
 
 align
 

@@ -4,7 +4,18 @@
         <link>https://lwyer.github.io/posts/</link>
         <description>All Posts | 风吹叶落</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>laiweiye@outlook.com (lwyer)</managingEditor>
-            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Fri, 12 May 2023 16:22:17 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Sat, 13 May 2023 13:25:21 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>You&#39;re not uncool. Making friends as an adult is just hard(不是你的问题，成年后交朋友太难了) | 翻译</title>
+    <link>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E6%88%90%E5%B9%B4%E5%90%8E%E4%BA%A4%E6%9C%8B%E5%8F%8B%E5%A4%AA%E9%9A%BE%E4%BA%86/</link>
+    <pubDate>Sat, 13 May 2023 13:25:21 &#43;0800</pubDate>
+    <author>wbur</author>
+    <guid>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E6%88%90%E5%B9%B4%E5%90%8E%E4%BA%A4%E6%9C%8B%E5%8F%8B%E5%A4%AA%E9%9A%BE%E4%BA%86/</guid>
+    <description><![CDATA[When you were a kid, it seemed like you could walk up to just about anybody and be best friends the next minute. But somewhere along the long, winding road to adulthood, making new friends became an impossibly hard thing to do.
+当你还是一个孩子时，似乎你可以走到任何人身边，并在下一分钟成为最好的朋友。但在通往成年之路的漫长曲折的某个地方，交新朋友变成了一件不可能的事情。
+Well according to psychologist and University of Maryland professor Marisa G. Franco, that’s because as you get older, making friends no longer happens organically.
+好吧，根据Maryland大学的教授，心理学家Marisa G. Franco所说，这是因为当你长大后，交朋友不再自然而然地发生。]]></description>
+</item>
+<item>
     <title>Codeforces Round 871 (Div. 4)小结</title>
     <link>https://lwyer.github.io/cf871%E5%B0%8F%E7%BB%93/</link>
     <pubDate>Fri, 12 May 2023 16:22:17 &#43;0800</pubDate>
@@ -28,11 +39,11 @@ D 题意 设一块金子重量是3x，这块金子能够以分成x和2x的方式
     <author>rohit kumar</author>
     <guid>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E5%AE%B6%E4%B9%A1/</guid>
     <description><![CDATA[I recently shifted from my home town to Delhi – the country&rsquo;s capital. When I was in my town, I missed Delhi. When I am in Delhi now, I miss my home town.
-最近我离开家乡来到德里-国家的首都。当我在我的家乡时，我想去德里，可当我真正在德里时，我想念我的家乡。
+最近我离开家乡来到德里&ndash;国家的首都。当我在我的家乡时，我想去德里，可当我真正在德里时，我想念我的家乡。
 You ask why?
 Why I wanted to move to Delhi is a story for another day. But I will tell you why I desire to move back to my small and still home town.
 你问我为什么？
-我为什么想去德里改天再说吧，但是我想告诉你的时我为什么想从德里回到我的小小的平静的家乡。]]></description>
+我为什么想去德里改天再说吧，但是我想告诉你的是我为什么想从德里回到我那小小的平静的家乡。]]></description>
 </item>
 <item>
     <title>Hello World</title>
