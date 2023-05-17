@@ -3,7 +3,7 @@
 
 I recently shifted from my home town to Delhi – the country's capital. When I was in my town, I missed Delhi. When I am in Delhi now, I miss my home town.
 
-> 最近我离开家乡来到德里--国家的首都。当我在我的家乡时，我想去德里，可当我真正在德里时，我想念我的家乡。
+> 最近我离开家乡来到德里——国家的首都。当我在我的家乡时，我想去德里，可当我真正在德里时，我想念我的家乡。
 
 You ask why?
 

@@ -4,7 +4,19 @@
         <link>https://lwyer.github.io/posts/</link>
         <description>All Posts | 风吹叶落</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>laiweiye@outlook.com (lwyer)</managingEditor>
-            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Sat, 13 May 2023 13:25:21 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Sun, 14 May 2023 19:57:18 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Why Prompt Engineering Is Nonsense 为什么（计算机上的）提示工程是没有意义的 | 翻译</title>
+    <link>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%98%AF%E6%B2%A1%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84/</link>
+    <pubDate>Sun, 14 May 2023 19:57:18 &#43;0800</pubDate>
+    <author>pavkam</author>
+    <guid>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%98%AF%E6%B2%A1%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84/</guid>
+    <description><![CDATA[Like most people in tech, I have been bombarded lately with a ton of “AI stuff”. Articles upon articles of opinions and rants. Papers and videos on various subjects from technical architectures to societal impacts and beyond.
+像大多数科技界人士一样，我最近被大量“AI的东西 ”所轰炸。（有）一篇又一篇的带有各种观点和争论的文章，（也有）从技术架构到社会影响等各种主题的论文和视频。
+While one must preserve a level-headed view on all these subjects and opinions, two related topics make me sad and annoyed at the same time. Namely:
+虽然一个人需要对各种主题和观点保持冷静，但有两个相关的话题让我同时感觉难过和恼火，即：
+AI won’t replace people. People using AI will replace people, and, Prompt engineering is the future.]]></description>
+</item>
+<item>
     <title>You&#39;re not uncool. Making friends as an adult is just hard(不是你的问题，成年后交朋友太难了) | 翻译</title>
     <link>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E6%88%90%E5%B9%B4%E5%90%8E%E4%BA%A4%E6%9C%8B%E5%8F%8B%E5%A4%AA%E9%9A%BE%E4%BA%86/</link>
     <pubDate>Sat, 13 May 2023 13:25:21 &#43;0800</pubDate>
@@ -39,7 +51,7 @@ D 题意 设一块金子重量是3x，这块金子能够以分成x和2x的方式
     <author>rohit kumar</author>
     <guid>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E5%AE%B6%E4%B9%A1/</guid>
     <description><![CDATA[I recently shifted from my home town to Delhi – the country&rsquo;s capital. When I was in my town, I missed Delhi. When I am in Delhi now, I miss my home town.
-最近我离开家乡来到德里&ndash;国家的首都。当我在我的家乡时，我想去德里，可当我真正在德里时，我想念我的家乡。
+最近我离开家乡来到德里——国家的首都。当我在我的家乡时，我想去德里，可当我真正在德里时，我想念我的家乡。
 You ask why?
 Why I wanted to move to Delhi is a story for another day. But I will tell you why I desire to move back to my small and still home town.
 你问我为什么？

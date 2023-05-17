@@ -112,7 +112,6 @@ The world is likely more open to you than you think it is, Franco adds, and ther
 
 
 > 所有翻译内容仅供个人学习使用，如涉及侵权，请联系本人删除。
-
 > All translated content is for personal study only, in case of infringement, please contact me to delete.
 
 ---
