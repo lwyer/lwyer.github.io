@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>codeforces - Category - 风吹叶落</title>
+        <title>codeforces - Category - 叶落风随</title>
         <link>https://lwyer.github.io/categories/codeforces/</link>
-        <description>codeforces - Category - 风吹叶落</description>
+        <description>codeforces - Category - 叶落风随</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>laiweiye@outlook.com (lwyer)</managingEditor>
             <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Fri, 12 May 2023 16:22:17 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/categories/codeforces/" rel="self" type="application/rss+xml" /><item>
     <title>Codeforces Round 871 (Div. 4)小结</title>

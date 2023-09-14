@@ -1,10 +1,20 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - 风吹叶落</title>
+        <title>All Posts - 叶落风随</title>
         <link>https://lwyer.github.io/posts/</link>
-        <description>All Posts | 风吹叶落</description>
+        <description>All Posts | 叶落风随</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>laiweiye@outlook.com (lwyer)</managingEditor>
-            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Sun, 21 May 2023 15:27:09 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Mon, 22 May 2023 19:03:27 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Closing a stale SSH connection关闭一个失效的SSH链接 | 翻译</title>
+    <link>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E5%85%B3%E9%97%AD%E4%B8%80%E4%B8%AA%E5%A4%B1%E6%95%88%E7%9A%84ssh%E9%93%BE%E6%8E%A5/</link>
+    <pubDate>Mon, 22 May 2023 19:03:27 &#43;0800</pubDate>
+    <author>lwyer</author>
+    <guid>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E5%85%B3%E9%97%AD%E4%B8%80%E4%B8%AA%E5%A4%B1%E6%95%88%E7%9A%84ssh%E9%93%BE%E6%8E%A5/</guid>
+    <description><![CDATA[Suppose you’re connected to a remote host with SSH and after a while the SSH session goes stale. The terminal is unresponsive and no keypress seem to take effect. There might be something with the network, the remote host is restarting or maybe your machine has been in hibernation, there could be multiple reasons for a stale session.
+假设你用SSH连接到一个远程主机，然后过一会儿SSH会话失效了。终端没有反应，而且似乎没有按键有效。可能是你的网络出了问题，远程主机正在重启或者也许是你的机器处于休眠状态，有多种原因可能使一个会话失效。
+The first solution that might come to mind is to just close the terminal emulator and create another one, but there is a better way.]]></description>
+</item>
+<item>
     <title>The difference between time and attention（时间和注意力的区别）| 翻译</title>
     <link>https://lwyer.github.io/%E7%BF%BB%E8%AF%91-%E6%97%B6%E9%97%B4%E5%92%8C%E6%B3%A8%E6%84%8F%E5%8A%9B%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
     <pubDate>Sun, 21 May 2023 15:27:09 &#43;0800</pubDate>
