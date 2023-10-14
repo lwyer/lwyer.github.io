@@ -1,0 +1,10 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>叶落风随</title>
+        <link>https://lwyer.github.io/</link>
+        <description>lwyer的博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>laiweiye@outlook.com (lwyer)</managingEditor>
+            <webMaster>laiweiye@outlook.com (lwyer)</webMaster>
+            <atom:link href="https://lwyer.github.io/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>
