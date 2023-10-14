@@ -1,12 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>叶落风随</title>
-        <link>https://lwyer.github.io/</link>
-        <description>lwyer的博客</description>
+        <title>All Posts - 叶落风随</title>
+        <link>https://lwyer.github.io/posts/</link>
+        <description>All Posts | 叶落风随</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>laiweiye@outlook.com (lwyer)</managingEditor>
-            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Sun, 15 Oct 2023 03:57:30 &#43;0800</lastBuildDate>
-            <atom:link href="https://lwyer.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+            <webMaster>laiweiye@outlook.com (lwyer)</webMaster><lastBuildDate>Sun, 15 Oct 2023 03:57:30 &#43;0800</lastBuildDate><atom:link href="https://lwyer.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Hello World</title>
     <link>https://lwyer.github.io/hello-world/</link>
     <pubDate>Sun, 15 Oct 2023 03:57:30 &#43;0800</pubDate>
